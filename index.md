@@ -7,11 +7,29 @@ Welcome to zombocom
 
 # Header
 
-Text
+Haskell
 
-{% highlight haskell %}
-fix :: (a -> a) -> a
-fix f = f $ fix f
-{% endhighlight %}
+```haskell
+main :: IO ()
+main = putStrLn "Hello, World!"
+```
+
+Scala
+
+```scala
+object Main {
+  def main(args: Array[String]): Unit = {
+    Console.putStrLn("Hello, World!")
+  }
+}
+```
+
+C
+
+```cpp
+int main() {
+    printf("Hello, World!\n");
+}
+```
 
 ---
