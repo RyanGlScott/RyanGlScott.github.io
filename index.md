@@ -1,35 +1,39 @@
 ---
-layout: frontpage
-title: Ryan Scott
+layout: default
+title: Home
 ---
 
-Welcome to zombocom
+<section class="archive">
+{% for post in site.posts %}
+{% unless post.next %}
 
-# Header
+{% unless forloop.first %}</div></div>{% endunless %}
 
-Haskell
+  <div class="bundle row gutters fadeInDown animated">
+    <h2 class="post-year col span_2">{{ post.date | date: '%Y' }}</h2>
+    <div class="posts-by-year col span_10">
 
-```haskell
-main :: IO ()
-main = putStrLn "Hello, World!"
-```
+{% else %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+{% if year != nyear %}
 
-Scala
+{% unless forloop.first %}</div></div>{% endunless %}
 
-```scala
-object Main {
-  def main(args: Array[String]): Unit = {
-    Console.putStrLn("Hello, World!")
-  }
-}
-```
+  <div class="bundle row gutters fadeInDown animated">
+    <h2 class="post-year col span_2">{{ post.date | date: '%Y' }}</h2>
+    <div class="posts-by-year col span_10">
+{% endif %}
+{% endunless %}
 
-C
+  <article class="row gutters">
+    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="col span_8">{{ post.title }}</a>
+    <div class="post-date col span_4">
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d" }}</time>
+    </div>
+  </article>
 
-```cpp
-int main() {
-    printf("Hello, World!\n");
-}
-```
+{% if forloop.last %}</div></div>{% endif %}
 
----
+{% endfor %}
+</section>
