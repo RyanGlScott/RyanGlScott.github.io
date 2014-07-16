@@ -77,7 +77,7 @@ Finally, you should edit `~/.cshrc` and add `~/.cabal/bin` to your `PATH` so tha
 ### But wait <a name="but-wait"></a>
 Regardless of how you installed GHC, you'll notice some problems if you try to install packages that require nontrivial build tools such as `autoconf` or `hsc2hs`. The problems might manifest themselves as errors such as `runProcess: runInteractiveProcess: exec: permission denied (Permission denied)`. This hints at the problem: a build tool is trying to execute a file in `/tmp`, but `/tmp` has the `noexec` filesystem option.
 
-In PC-BSD, this can be fixed by going to the PC-BSD Control Panel > Hardware > Disk Manager. Under the ZFS Filesystems tab, right-click `tank/var` and click "Edit properties". Change `exec` to "on" and click "Apply."
+In PC-BSD, this can be fixed by going to the PC-BSD Control Panel > Hardware > Disk Manager. Under the ZFS Filesystems tab, right-click `tank/tmp` and click "Edit properties". Change `exec` to "on" and click "Apply."
 
 That should clear the way for `cabal` to do its thing. Now you can get the very latest stuff:
 
