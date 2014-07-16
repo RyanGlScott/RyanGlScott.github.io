@@ -3,3 +3,9 @@
 
 - url: /about
   title: About
+  
+- url: /blog
+  title: Blog
+
+- url: /resume
+  title: Resume

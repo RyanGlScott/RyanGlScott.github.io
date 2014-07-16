@@ -1,5 +1,5 @@
 markdown: redcarpet
-permalink: /:title
+permalink: /:year/:month/:day/:title
 
 url:
 baseurl:
