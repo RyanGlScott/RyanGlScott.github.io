@@ -7,9 +7,7 @@ Recently, I've been messing around a lot with Linux's Bluetooth libraries [BlueZ
 
 As an example, the command `sdptool browse local` will find all Bluetooth services registered on your machine. If I ran it, I got the error:
 
-```
-Failed to connect to SDP server on FF:FF:FF:00:00:00: No such file or directory
-```
+    Failed to connect to SDP server on FF:FF:FF:00:00:00: No such file or directory
 
 Huh? How come this works on Ubuntu but not Fedora?
 

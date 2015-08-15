@@ -1,8 +1,59 @@
-markdown: redcarpet
-permalink: /:year/:month/:day/:title
+# Site settings
+title: Ryan Scott
+tagline:
+email:
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://192.168.1.148:4000" # the base hostname & protocol for your site
+logourl: /assets/images/logo.png # Site logo
+author: "Ryan Scott"
+author_thumbnail: "/assets/images/avatar.png" # Author avatar
+# Theme customization - please change from the defaults!
+theme:
+  # Color for sidebar bar, links, etc
+  highlight_color: "#205081"
+  # Social media links, leave blank to ignore
+  social:
+    github: RyanGlScott
+    # twitter: gayanvirajith
+    # facebook: gayanvirajith
+    # gplus: +gayanvirajith
+    # dribble: gayanvirajith
+    # pinterest: gayanvirajith
 
-url:
-baseurl:
+  # Enable share buttons on post footer
+  show_share_buttons: false
 
-redcarpet:
-  extensions: [strikethrough, tables]
+  # Show author picure, name and social links on post footer
+  show_author_info: false
+
+  # Disqus comments manager - shortname
+  # disqus_shortname: gaya-webcreate
+
+  # Google Analytics/Webmaster key, leave blank to ignore
+  google_analytics_key:
+  google_webmaster_key:
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink:        pretty
+
+# Pagination config
+paginate: 5
+
+# Files/Folders to be excluded from generated _site folder
+exclude:
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+  sass_dir: assets/css/_sass
+  style: :compressed
