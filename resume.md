@@ -1,46 +1,45 @@
 ---
 layout: page
-title: About me
+title: Résumé
 permalink: /resume/
 ---
 
 ### Education
-* __[Indiana University (IU)](https://www.indiana.edu/)__, Bloomington, IN — August 2015–present
+* __[Indiana University (IU)](https://www.indiana.edu/)__, Bloomington, Indiana. August 2015–present. Pursuing a Ph.D in Computer Science.
+* __[University of Kansas (KU)](http://ku.edu/)__, Lawrence, Kansas. August 2011–May 2015. B.S. in Computer Science with Mathematics minor.
 
-  Pursuing a Ph.D in Computer Science
-* __[University of Kansas (KU)](http://ku.edu/)__, Lawrence, KS — August 2011–May 2015
+### Work experience
+* Graduate Research Assistant, [__Center for Research in Extreme Scale Technologies__](http://crest.iu.edu/), Bloomington, Indiana. Summer 2015–present.
 
-  B.S. in Computer Science with Mathematics minor
+  Working on making GHC work with high-performance distributed runtimes (see [`haskell-hpx`](https://github.com/iu-parfunc/haskell-hpx)) and benchmarking GHC performance.
 
-### Experience
-* __Student Research Assistant__, [Information and Telecommunication Technology Center (ITTC)](http://www.ittc.ku.edu/), Lawrence, KS — Summer 2012–present
+* Intern, [__Intel Labs__](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, Oregon. Fall 2015.
 
-  Applied functional programming techniques (using Haskell and Scala) to software domains such as networking, mobile devices, and animation
+  Contributed to open sourcing the Intel Haskell Research Compiler (HRC), described in [this paper](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf).
 
-  Designed large Android apps that interface with web and Bluetooth servers
+* Student Research Assistant, [__Information and Telecommunication Technology Center (ITTC)__](http://www.ittc.ku.edu/), Lawrence, Kansas. Summer 2012–Summer 2015.
 
+  Applied functional programming techniques (using Haskell and Scala) to software domains such as networking, mobile devices, and animation.
 
-### ITTC Software Projects
-* __[`bluetooth`](https://github.com/RyanGlScott/bluetooth)__ (developer and maintainer). Haskell bindings to low-level Bluetooth APIs written in C. Simplifies the process of making Bluetooth code that works with different OSes.
-* __[`Win32-unicode-io`](https://github.com/RyanGlScott/Win32-unicode-io)__ (developer and maintainer). An alternative Haskell prelude that uses native Windows console API functions to correctly output Unicode characters.
-* __[HERMIT](https://github.com/ku-fpg/hermit/)__ (contributor and tester). An interactive Haskell compiler plugin that allows a user to apply code rewrites to make the process of high-assurance software development easier. HERMIT applies several semi-formal modeling techniques such as the worker/wrapper transformation.
-* __[Armatus](https://github.com/ku-fpg/armatus)__ (co-developer). An Android app that interfaces with a HERMIT session via a RESTful web server. armatus assists in the process of code rewriting through graphical shortcuts and mobile-specific gestures not possible in a command-line setting.
-* __ExhibitPlus__ (co-developer). An Android app that augments a museum by allowing users to learn more information about exhibits by scanning specialized QR codes.
+  Designed large Android apps that interface with web and Bluetooth servers.
+
+### Papers
+* A. Gill, N. Sculthorpe, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, J. Rosenbluth, R. Scott, and J. Stanton, ["The remote monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), in _Proceedings of the 8th ACM SIGPLAN Symposium on Haskell_. New York, NY, USA: ACM, 2015, pp. 59–70.
+
+### Talks
+
+#### 2016
+* Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, Indiana. February 26, 2016. [ pdf ]
+
+#### 2015
+* An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, British Columbia, August 30, 2015. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
+
+### Portfolio
+* [__Glasgow Haskell Compiler (GHC)__](http://git.haskell.org/ghc.git) (contributor). The flagship Haskell compiler.
+* [__HERMIT__](https://github.com/ku-fpg/hermit/) (contributor and tester). An interactive Haskell compiler plugin that allows a user to apply code rewrites to make the process of high-assurance software development easier. HERMIT applies several semi-formal modeling techniques such as the worker/wrapper transformation.
+* [__Armatus__](https://github.com/ku-fpg/armatus) (co-developer). An Android app that interfaces with a HERMIT session via a RESTful web server. armatus assists in the process of code rewriting through graphical shortcuts and mobile-specific gestures not possible in a command-line setting.
 
 ### Software skills
 * Languages: [Haskell](http://www.haskell.org/), [Java](https://www.java.com/), [Scala](http://scala-lang.org/), [C](http://en.wikipedia.org/wiki/C_\(programming_language\)), [C++](http://en.wikipedia.org/wiki/C++)
-* Operating systems: Windows, Linux, Android, FreeBSD
-* Tools: [IntelliJ IDEA](http://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/), [Vim](http://www.vim.org/), [Git](http://git-scm.com/), [SVN](https://subversion.apache.org/)
+* Operating systems: Linux, Android, Windows.
 * Technologies: [Android SDK](http://developer.android.com/reference/packages.html), Bluetooth APIs ([Windows](http://msdn.microsoft.com/en-us/library/windows/desktop/ms741416\(v=vs.85\).aspx) and [Linux](http://www.bluez.org/)), [MinGW](http://www.mingw.org/)
-
-### Student organizations
-* [Association for Computing Machinery (ACM), KU Chapter](http://people.eecs.ku.edu/~acm/), secretary (2013–present)
-* [KU Competitive Programming Group](https://github.com/KU-Competitive-Programming), co-chair (2013–present)
-
-### Student activities
-* Oversaw the operation of a KU ACM programming competition, including development of programming challenges and maintenance of the live scoring system (2014)
-* Developed and maintained Android app for KU Engineering Expo ([2013](https://github.com/RyanGlScott/ku-engineering-expo-2013), [2014](https://github.com/KU-Competitive-Programming/ku-engineering-expo-2014))
-* Won CCSC: Central Plains programming contest as part of a Competitive Programming team (2013)
-* Volunteered as a member of [KU Alternative Spring Breaks](http://kualternativebreaks.com/):
- * Repaired park equipment and taught science classes to youth groups at the [Urban Ecology Center](http://urbanecologycenter.org/) (2013)
- * Removed invasive plant species and distributed produce to community centers at [Johnson's Backyard Garden](https://www.jbgorganic.com/) in Austin, TX (2012)

@@ -10,7 +10,7 @@ I work primarily with [Haskell](https://www.haskell.org/), a purely functional p
 
 ### Contact me
 
-Say e-mails to ryan.gl.scott@{gmail.com,indiana.edu}, or find me on IRC as @RyanGlScott.
+Send e-mails to ryan.gl.scott@{gmail.com,indiana.edu}, or find me on IRC as @RyanGlScott.
 
 ---
 
