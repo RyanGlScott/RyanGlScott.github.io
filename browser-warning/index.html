@@ -6,7 +6,7 @@ title: Your browser is not supported
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="lt-ie9 no-js"> <!--<![endif]-->  
+<!--[if gt IE 8]><!--> <html class="lt-ie9 no-js"> <!--<![endif]-->
   <head>
   <meta charset="utf-8">
   <!-- Enable responsiveness on mobile devices-->
@@ -16,11 +16,11 @@ title: Your browser is not supported
   <title>{% if page.browser_title %}{{ page.browser_title }}{% elsif page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.go.meta_description }}{% endif %}">
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-  
+
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.baseurl }}">
 
   {% comment %}
-    The meta tag below is useful when you want to verify the website to 
+    The meta tag below is useful when you want to verify the website to
     Google web-master tools. Simply configure your site verification key on
     _config.yml given by Google web-master tools.
   {% endcomment %}
@@ -28,9 +28,9 @@ title: Your browser is not supported
   {% if site.google_webmaster_key %}
   <meta name="google-site-verification" content="{{ site.google_webmaster_key }}" />
   {% endif %}
-  
+
   <link rel="stylesheet" href="{{ '/assets/css/browser-support.css' | prepend: site.baseurl | prepend: site.url }}">
-  
+
   <!-- IE Fixes -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +40,7 @@ title: Your browser is not supported
   <![endif]-->
 
   {% include style.html %}
-  
+
   </head>
   <body>
     <div class="wrap">
@@ -48,16 +48,16 @@ title: Your browser is not supported
           <img src="{{ site.baseurl }}/assets/images/logo-big.png">
           <h1>{{ page.title }}</h1>
           <p>
-            We are sorry but the website does not support Internet 
-            Explorer 6, 7 and 8. 
-            To get the best experience on 
+            We are sorry but the website does not support Internet
+            Explorer 6, 7 and 8.
+            To get the best experience on
             <a href="{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}">
               <strong>{{ site.url | append: site.baseurl }}</strong>
             </a> we recommend using latest version of
             <a href="https://www.google.com/chrome">Chrome</a>,
             <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>,
-            <a href="http://www.apple.com/safari/">Safari</a>, 
-            <a href="http://www.opera.com/">Opera</a> Or 
+            <a href="http://www.apple.com/safari/">Safari</a>,
+            <a href="http://www.opera.com/">Opera</a> Or
             <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">IE</a>.
           </p>
           <p>Thanks</p>
@@ -67,7 +67,7 @@ title: Your browser is not supported
       /* To avoid render blocking css */
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = 'http://fonts.googleapis.com/css?family=Open+Sans';
+        l.href = '//fonts.googleapis.com/css?family=Open+Sans';
         var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
       };
       var raf = requestAnimationFrame || mozRequestAnimationFrame ||
@@ -75,5 +75,5 @@ title: Your browser is not supported
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
-  </body>        
+  </body>
 </html>
