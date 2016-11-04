@@ -29,10 +29,12 @@ permalink: /resume/
 ### Talks
 
 #### 2016
+* Verified instances for parallel functional programming. [PL Wonks](http://wonks.github.io/), Bloomington, Indiana. November 4, 2016. [ pdf ]
+* Taming the `deriving` zoo. [Haskell Implementors Workshop 2016 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2016), Nara, Japan. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=aGVDorZJypY&index=13&list=PLnqUlCo055hX1F0PCi9FjdllYQMwCQvps) ]
 * Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, Indiana. February 26, 2016. [ pdf ]
 
 #### 2015
-* An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, British Columbia, August 30, 2015. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
+* An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, British Columbia. August 30, 2015. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
 
 ### Portfolio
 * [__Glasgow Haskell Compiler (GHC)__](http://git.haskell.org/ghc.git) (contributor). The flagship Haskell compiler.
