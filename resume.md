@@ -22,13 +22,16 @@ permalink: /resume/
 
 ### Talks
 
+#### 2017
+* Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. [ pdf ]
+
 #### 2016
-* Verified instances for parallel functional programming. [PL Wonks](http://wonks.github.io/), Bloomington, Indiana. November 4, 2016. [ pdf ]
+* Verified instances for parallel functional programming. [Midwest PL Summit](http://pl.cs.uchicago.edu/PLSummit/2016/), Chicago, IL. December 2, 2016. [ pdf ]
 * Taming the `deriving` zoo. [Haskell Implementors Workshop 2016 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2016), Nara, Japan. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=aGVDorZJypY&index=13&list=PLnqUlCo055hX1F0PCi9FjdllYQMwCQvps) ]
-* Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, Indiana. February 26, 2016. [ pdf ]
+* Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, IIN. February 26, 2016. [ pdf ]
 
 #### 2015
-* An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, British Columbia. August 30, 2015. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
+* An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, BC, Canada. August 30, 2015. [ pdf ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
 
 ### Portfolio
 * [Glasgow Haskell Compiler (GHC)](http://git.haskell.org/ghc.git) (contributor). The flagship compiler for the Haskell programming language. Contributed to GHC's support for metaprogramming, including `deriving` and Template Haskell.
