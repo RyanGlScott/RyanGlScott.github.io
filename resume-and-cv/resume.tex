@@ -1,0 +1,77 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page
+
+\begin{document}
+
+\name{RYAN SCOTT\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name
+
+\address{\texttt{rgscott@indiana.edu} $\bullet$ \texttt{ryanglscott.github.io}}
+
+\begin{resume}
+
+\section{INTERESTS}
+    I seek ways to use functional programming and static typing to make writing high-level, performant, and correct software easier. I am also interested in compilers and domain-specific languages.
+
+\section{EDUCATION}
+	\vspace{-0.1in}
+    \begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.55in}\= \kill % set up two tab positions
+     \textbf{Indiana University (IU)} \> Bloomington, IN \> August 2015--present \\
+    Pursuing Ph.D in Computer Science \\
+    Advisor: Ryan Newton \\
+    \end{tabbing}
+    \vspace{-0.5in}
+    \begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.55in}\= \kill % set up two tab positions
+    \hspace{2.3in}\= \hspace{2.4in}\= \kill % set up two tab positions
+     \textbf{University of Kansas (KU)} \> Lawrence, KS \> August 2011--May 2015 \\
+    B.S. in Computer Science with Mathematics minor \\
+    Advisor: Andy Gill \> G.P.A. 3.9/4.0
+    \end{tabbing}
+
+
+\section{EXPERIENCE}
+   \vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.5in}\= \kill % set up two tab positions
+    \textbf{Graduate Research Assistant} \> Center for Research in Extreme-Scale Technologies (CREST) \\
+                             \>Bloomington, IN \> August 2015--present
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    Researching applications of functional programming techniques (as implemented in the Glasgow Haskell Compiler, or GHC) in a distributed setting. \vspace{0.04in} \\
+    Developing GHC optimizations to achieve better parallel performance, particularly concerning program serialization and strictness analysis. \\
+   \vspace{-0.35in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.2in}\= \kill % set up two tab positions
+    \textbf{Student Research Assistant} \> Information and Telecommunication Technology Center (ITTC) \\
+                             \>Lawrence, KS \> Summer 2012--August 2015
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    Applied functional programming techniques (using Haskell and Scala) to software domains such as networking, mobile devices, web animation, and embedded devices. \vspace{0.04in} \\
+    Designed large Android apps that interface with web and Bluetooth servers.
+
+
+\section{PORTFOLIO}
+	\texttt{\textbf{GHC}} (contributor): The flagship compiler for the Haskell programming language. (2015--present) \vspace{0.04in} \\
+    \texttt{\textbf{HERMIT}} (contributor and tester). An interactive Haskell compiler plugin that allows a user to apply code rewrites to make the process of high-assurance software development easier. \verb+HERMIT+ applies several semi-formal modeling techniques such as the worker/wrapper transformation. (2013--2015) \vspace{0.04in} \\
+    \texttt{\textbf{blank-canvas}} (developer). A Haskell binding to the HTML5 \texttt{<canvas>} API, which allows for graphical web applications to be written in Haskell. (2014--2015) \vspace{0.04in} \\
+    \texttt{\textbf{armatus}} (co-developer). An Android app that interfaces with a \verb+HERMIT+ session via a RESTful web server. \verb+armatus+ assists in the process of code rewriting through graphical shortcuts and mobile-specific gestures that are not feasible in a command-line setting. (2012--2014) \vspace{0.04in}
+
+\section{PUBLICATIONS}
+    A. Gill, E. Austin, R. Scott, and D. Young, ``HERMIT, the Black Shell, and the Remote Monad,'' 2016, to be submitted to PADL, 2016.
+    \vspace{0.04in} \\
+	A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ``The remote-monad design pattern,'' 2015, in \textit{Proceedings of the 8th ACM SIGPLAN Symposium on Haskell}. New York, NY, USA: ACM, 2015, pp. 59–70.
+
+\section{SOFTWARE SKILLS}
+   \vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{1.8in} \= \kill % set up one tab position
+    Programming languages:         \> Haskell, Java, Scala, C, C++, JavaScript \\
+   \end{tabbing}
+
+\end{resume}
+\end{document}
