@@ -23,7 +23,7 @@ permalink: /resume/
 ### Talks
 
 #### 2017
-* Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
+* Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 24, 2017. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
 
 #### 2016
 * Verified instances for parallel functional programming. [Midwest PL Summit](http://pl.cs.uchicago.edu/PLSummit/2016/), Chicago, IL. December 2, 2016. [ pdf ]
