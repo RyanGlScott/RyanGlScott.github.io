@@ -27,8 +27,8 @@ permalink: /resume/
 
 #### 2016
 * Verified instances for parallel functional programming. [Midwest PL Summit](http://pl.cs.uchicago.edu/PLSummit/2016/), Chicago, IL. December 2, 2016. [ pdf ]
-* Taming the `deriving` zoo. [Haskell Implementors Workshop 2016 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2016), Nara, Japan. [ [pdf](../talk-slides/ttdz-hiw-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=aGVDorZJypY&index=13&list=PLnqUlCo055hX1F0PCi9FjdllYQMwCQvps) ]
-* Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, IIN. February 26, 2016. [ [pdf](../talk-slides/gpftm-wonks-slides.pdf) ]
+* Taming the `deriving` zoo. [Haskell Implementors Workshop 2016 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2016), Nara, Japan. September 24, 2016. [ [pdf](../talk-slides/ttdz-hiw-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=aGVDorZJypY&index=13&list=PLnqUlCo055hX1F0PCi9FjdllYQMwCQvps) ]
+* Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, IN. February 26, 2016. [ [pdf](../talk-slides/gpftm-wonks-slides.pdf) ]
 
 #### 2015
 * An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, BC, Canada. August 30, 2015. [ [pdf](../talk-slides/derive-foldable-hiw-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
