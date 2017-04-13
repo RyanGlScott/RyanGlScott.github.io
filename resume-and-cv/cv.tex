@@ -1,0 +1,80 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page
+\renewcommand{\namefont}{\bfseries\LARGE}
+
+\makeatletter
+\def\@tablebox#1{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+\makeatother
+
+\begin{document}
+
+\name{RYAN SCOTT\\[12pt]}     % the \\[12pt] adds a blank
+                                        % line after name
+\address{\texttt{rgscott@indiana.edu} $\bullet$ \texttt{ryanglscott.github.io}}
+
+\begin{resume}
+
+\section{INTERESTS}
+    I seek ways to use functional programming and static typing to make writing high-level, performant, and correct software easier. I am also interested in compilers and domain-specific languages.
+
+\section{EDUCATION}
+%       \vspace{-0.1in}
+%     \begin{tabbing}
+%     \hspace{2.3in}\= \hspace{2.55in}\= \kill % set up two tab positions
+     \textbf{Indiana University}, Bloomington, IN. Advisor: Ryan Newton. \hfill \textit{Summer 2015--present} \\
+    Pursuing Ph.D in Computer Science.
+
+%     \end{tabbing}
+%     \vspace{0.4in}
+%     \begin{tabbing}
+%     \hspace{2.3in}\= \hspace{2.55in}\= \kill % set up two tab positions
+%     \hspace{2.3in}\= \hspace{2.4in}\= \kill % set up two tab positions
+     \textbf{University of Kansas}, Lawrence, KS. Advisor: Andy Gill. \hfill \textit{Class of 2015} \\
+    B.S. in Computer Science with Mathematics minor. GPA 3.9/4.0.
+
+\section{WORK EXPERIENCE}
+% \vspace{-0.1in}
+%     \begin{tabbing}
+%     \hspace{2.3in}\= \hspace{2.55in}\= \kill % set up two tab positions
+    \textbf{Galois Inc.}, Portland, OR \hfill \textit{Summer 2017}
+
+    \textbf{Intel Labs}, Hillsboro, OR \hfill \textit{Winter 2015} \\
+    Worked on preparing the Intell Haskell Research Compiler (HRC) for an open source release.
+%     \end{tabbing}
+
+\section{PUBLICATIONS}
+        M. Vollmer, R. Scott, M. Musuvathi, and R. Newton. \textbf{SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap}, \textit{PPoPP 2017}. \\ \\
+        A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, \textbf{The remote-monad design pattern}, \textit{Haskell Symposium 2015}.
+
+%     \end{tabbing}
+
+\section{TALKS}
+    \textbf{Detflow: towards deterministic workflows on your favorite OS} \hfill \textit{January 2017} \\
+    PL Wonks, Bloomington, IN
+
+    \textbf{Verified instances for parallel functional programming} \hfill \textit{December 2016} \\
+    Midwest PL Summit, Chicago, IL
+
+    \textbf{Taming the \texttt{deriving} zoo} \hfill \textit{September 2016} \\
+    Haskell Implementors Workshop 2016 lightning talks, Nara, Japan
+
+    \textbf{Generic programming for the masses} \hfill \textit{February 2016} \\
+    PL Wonks, Bloomington, IN
+
+    \textbf{An existential-aware \texttt{DeriveFoldable}} \hfill \textit{August 2015} \\
+    Haskell Implementors Workshop 2015 lightning talks, Vancouver, BC, Canada
+
+\section{PROFESSIONAL ACTIVITIES}
+    \textbf{Haskell Core Libraries Committee}, member. \hfill \textit{2016--present}
+
+\section{TEACHING}
+    Teaching assistant, \textit{CSCI-P 523: Programming Language Implementation} \hfill \textit{Fall 2016} \\
+    Compilers course at Indiana University
+
+\end{resume}
+\end{document}
