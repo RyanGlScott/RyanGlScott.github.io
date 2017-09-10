@@ -4,18 +4,20 @@ title: Résumé
 permalink: /resume/
 ---
 
-### Work experience
-* [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
-
-### Publications
-* M. Vollmer, R. Scott, M. Musuvathi, and R. Newton. ["SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap"](http://www.cs.indiana.edu/~rrnewton/papers/ppopp17-sc-haskell.pdf), PPoPP 2017.
-* A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), Haskell Symposium 2015.
-
 ### Education
 * [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). Summer 2015–present. Pursuing Ph.D in Computer Science.
   * Teaching assistant, CSCI-P 523: Programming Language Implementation, compilers course at Indiana University, Fall 2016.
 * [University of Kansas (KU)](http://ku.edu/), Lawrence, Kansas. Advisor: [Andy Gill](http://ku-fpg.github.io/people/andygill/). Class of 2015. B.S. in Computer Science with Mathematics minor. GPA 3.9/4.0.
   * Co-chair of KU Competitive Programming Group, 2013–2015.
+
+### Work experience
+* [Galois](https://galois.com/), Portland, OR. Summer 2017. Worked on a symolic simulation engine written in Haskell.
+* [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
+
+### Publications
+* R. G. Scott, O. S. Navarro Leija, J. Devietti, and R. R. Newton. ["Monadic Composition for Deterministic, Parallel Batch Processing"](https://2017.splashcon.org/event/splash-2017-oopsla-detflow-a-monad-for-deterministic-parallel-shell-scripting), OOPSLA 2017.
+* M. Vollmer, R. G. Scott, M. Musuvathi, and R. R. Newton. ["SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap"](http://www.cs.indiana.edu/~rrnewton/papers/ppopp17-sc-haskell.pdf), PPoPP 2017.
+* A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), Haskell Symposium 2015.
 
 ### Professional activities
 * [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–present.
@@ -23,6 +25,7 @@ permalink: /resume/
 ### Talks
 
 #### 2017
+* Type Theorists HATE Him! Learn this ONE WEIRD TRICK to fake dependent types in a language that doesn’t support them. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2017. [ [pdf](../talk-slides/tthh-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=u59tzXNFerY) ]
 * Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 24, 2017. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
 
 #### 2016
