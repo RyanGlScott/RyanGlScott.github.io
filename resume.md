@@ -15,6 +15,7 @@ permalink: /resume/
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
+* N. Vazou, A. Tondwalkar, R. Jhala, V. Choudhury, R. G. Scott, R. R. Newton, and P. Wadler. ["Refinement Reflection: Complete Verification with SMT"](https://nikivazou.github.io/static/popl18/refinement-reflection.pdf), POPL 2018.
 * R. G. Scott, O. S. Navarro Leija, J. Devietti, and R. R. Newton. ["Monadic Composition for Deterministic, Parallel Batch Processing"](https://2017.splashcon.org/event/splash-2017-oopsla-detflow-a-monad-for-deterministic-parallel-shell-scripting), OOPSLA 2017.
 * M. Vollmer, R. G. Scott, M. Musuvathi, and R. R. Newton. ["SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap"](http://www.cs.indiana.edu/~rrnewton/papers/ppopp17-sc-haskell.pdf), PPoPP 2017.
 * A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), Haskell Symposium 2015.
@@ -25,6 +26,7 @@ permalink: /resume/
 ### Talks
 
 #### 2017
+* Monadic Composition for Deterministic, Parallel Batch Processing (OOPSLA'17 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. October 13, 2017. [ [pdf](../talk-slides/mcdpbp-wonks.pdf) ]
 * Type Theorists HATE Him! Learn this ONE WEIRD TRICK to fake dependent types in a language that doesn’t support them. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2017. [ [pdf](../talk-slides/tthh-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=u59tzXNFerY) ]
 * Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 24, 2017. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
 
