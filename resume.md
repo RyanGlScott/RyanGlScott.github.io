@@ -26,12 +26,13 @@ permalink: /resume/
 ### Talks
 
 #### 2017
-* Monadic Composition for Deterministic, Parallel Batch Processing (OOPSLA'17 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. October 13, 2017. [ [pdf](../talk-slides/mcdpbp-wonks.pdf) ]
+* Monadic Composition for Deterministic, Parallel Batch Processing. [OOPSLA'17](https://2017.splashcon.org/track/splash-2017-OOPSLA), Vancouver, BC, Canada. October 26, 2017. [ [pdf](../talk-slides/mcdpbp-oopsla.pdf) ] [ youtube ]
+  * Monadic Composition for Deterministic, Parallel Batch Processing (OOPSLA'17 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. October 13, 2017. [ [pdf](../talk-slides/mcdpbp-wonks.pdf) ]
 * Type Theorists HATE Him! Learn this ONE WEIRD TRICK to fake dependent types in a language that doesn’t support them. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2017. [ [pdf](../talk-slides/tthh-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=u59tzXNFerY) ]
 * Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 24, 2017. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
 
 #### 2016
-* Verified instances for parallel functional programming. [Midwest PL Summit](http://pl.cs.uchicago.edu/PLSummit/2016/), Chicago, IL. December 2, 2016. [ pdf ]
+* Verified instances for parallel functional programming. [Midwest PL Summit](http://pl.cs.uchicago.edu/PLSummit/2016/), Chicago, IL. December 2, 2016.
 * Taming the `deriving` zoo. [Haskell Implementors Workshop 2016 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2016), Nara, Japan. September 24, 2016. [ [pdf](../talk-slides/ttdz-hiw-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=aGVDorZJypY&index=13&list=PLnqUlCo055hX1F0PCi9FjdllYQMwCQvps) ]
 * Generic programming for the masses. [PL Wonks](http://wonks.github.io/), Bloomington, IN. February 26, 2016. [ [pdf](../talk-slides/gpftm-wonks-slides.pdf) ]
 
