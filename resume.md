@@ -21,6 +21,7 @@ permalink: /resume/
 * A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), Haskell Symposium 2015.
 
 ### Professional activities
+* [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
 * [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–present.
 
 ### Talks
