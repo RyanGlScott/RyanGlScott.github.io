@@ -27,7 +27,7 @@ permalink: /resume/
 ### Talks
 
 #### 2017
-* Monadic Composition for Deterministic, Parallel Batch Processing. [OOPSLA'17](https://2017.splashcon.org/track/splash-2017-OOPSLA), Vancouver, BC, Canada. October 26, 2017. [ [pdf](../talk-slides/mcdpbp-oopsla.pdf) ] [ youtube ]
+* Monadic Composition for Deterministic, Parallel Batch Processing. [OOPSLA'17](https://2017.splashcon.org/track/splash-2017-OOPSLA), Vancouver, BC, Canada. October 26, 2017. [ [pdf](../talk-slides/mcdpbp-oopsla.pdf) ] [ [youtube](https://www.youtube.com/watch?v=A_W9SZG36rM) ]
   * Monadic Composition for Deterministic, Parallel Batch Processing (OOPSLA'17 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. October 13, 2017. [ [pdf](../talk-slides/mcdpbp-wonks.pdf) ]
 * Type Theorists HATE Him! Learn this ONE WEIRD TRICK to fake dependent types in a language that doesn’t support them. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2017. [ [pdf](../talk-slides/tthh-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=u59tzXNFerY) ]
 * Detflow: towards deterministic workflows on your favorite OS. [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 24, 2017. [ [pdf](../talk-slides/detmonad-wonks-slides.pdf) ]
