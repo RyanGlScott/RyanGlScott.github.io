@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to derive `Generic` for (some) GADTs using `QuantifiedConstraints`
+title: How to derive Generic for (some) GADTs using QuantifiedConstraints
 ---
 
 The `Generic` (and `Generic1`) classes are extremely useful tools in a GHC
@@ -56,7 +56,7 @@ import GHC.Generics
 Let's revisit our `MyGADT` example:
 
 {% highlight haskell %}
-data MyGADT z where
+data MyGADT a where
   MyGADT :: Int -> T Int
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ do so in a way that is reusable, so that we can encode _other_ constraints,
 such as `Show a`, if we wish.
 
 To this end, I propose creating a new generic representation type, which I
-will call `EC` (short for Existential Constructor Context):
+will call `ECC` (short for Existential Constructor Context):
 
 {% highlight haskell %}
 data ECC :: Constraint -> (Type -> Type) -> Type -> Type where
@@ -295,14 +295,14 @@ instance (c => Eq (f x)) => Eq (ECC c f x) where
 Notice the use of the quantified constraint `c => Eq (f x)`. The fact that
 the `=>` syntax is reused here is intentional, as one can think of
 `c => Eq (f x)` as a local instance declaration that need not hold everywhere
-in the program. Indeed `c => Eq (f x)` makes no sense on its own, but in the
+in the program. Indeed, `c => Eq (f x)` makes no sense on its own, but in the
 context of typechecking a generic `Eq` instance for `MyGADT`, we will at
 different points instantiate `c` and `f x` to obtain:
 
 * `(a ~ Int) => Eq (Rec0 Int x)`
 * `(Eq a)    => Eq (Rec0 a   x)`
 
-Both which are in fact valid instances.
+Both which are in fact valid instantiations of the `Eq` instance for `Rec0`.
 
 With the magic of `QuantifiedConstraints`, we now discover that our `Eq`
 instance for `MyGADT`:
@@ -312,7 +312,8 @@ instance Eq (MyGADT a) where
   (==) = genericEq
 {% endhighlight %}
 
-Now typechecks without issue! We no longer need any constraints, since
+Now typechecks without issue! We no longer need to write out any constraints
+in this instance, since
 `QuantifiedConstraints` ensures that the `c`s in `ECC c f x` will only ever
 be used locally.
 
@@ -404,7 +405,7 @@ last type variable at all.
 Existential constructor contexts aren't the only place we can use
 `QuantifiedConstraints` to increase the surface area of `GHC.Generics`.
 There's another restriction that `DeriveGeneric` imposes where no field
-types can mention rank-_n_ types, such as in this example:
+types can mention rank-n types, such as in this example:
 
 {% highlight haskell %}
 newtype RankNExample f a = RankNExample (Functor f => f a)
@@ -412,7 +413,7 @@ newtype RankNExample f a = RankNExample (Functor f => f a)
 
 But I laugh in the face of your restrictions, GHC. Akin to the `ECC`
 (Existential Constructor Context) type above, we can create something
-analogous for rank-_n_ contexts called `RFC` (Rank-_n_ Constructor Context):
+analogous for rank-n contexts called `RFC` (Rank-n Constructor Context):
 
 {% highlight haskell %}
 newtype RFC :: Constraint -> (Type -> Type) -> Type -> Type where
@@ -450,7 +451,7 @@ Not bad!
 ## Final thoughts
 
 In this post, we've seen a potential extension of `GHC.Generics` that would
-allow us to derive `Generic` for certain classes of GADTs. The key to this
+allow us to derive `Generic(1)` for certain classes of GADTs. The key to this
 trick is `QuantifiedConstraints`, without which none of this would be possible.
 
 `QuantifiedConstraints` is still going through the
