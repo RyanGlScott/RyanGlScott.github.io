@@ -3,8 +3,8 @@ layout: post
 title: How to derive Generic for (some) GADTs using QuantifiedConstraints
 ---
 
-The `Generic` (and `Generic1`) classes are extremely useful tools in a GHC
-programmer's toolbox, but currently their utility is limited in the sense that
+The `Generic` and `Generic1` classes are extremely useful tools in a GHC
+programmer's toolbox, but their utility is currently limited in the sense that
 one can only derive `Generic` instances for simple data types. By "simple", I
 mean that GHC will simply error if you try to derive `Generic` a more
 sophisticated data type—a GADT—like this one:
