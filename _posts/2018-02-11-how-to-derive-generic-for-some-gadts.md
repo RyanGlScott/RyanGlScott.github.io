@@ -11,7 +11,7 @@ sophisticated data type—a GADT—like this one:
 
 {% highlight haskell %}
 data MyGADT a where
-  MyGADT :: Int -> T Int
+  MyGADT :: Int -> MyGADT Int
 {% endhighlight %}
 
 In this post, we will ask the question: is this restriction necessary? That is,
@@ -57,7 +57,7 @@ Let's revisit our `MyGADT` example:
 
 {% highlight haskell %}
 data MyGADT a where
-  MyGADT :: Int -> T Int
+  MyGADT :: Int -> MyGADT Int
 {% endhighlight %}
 
 Can we come up with a suitable `Generic` instance for this? A naïve first
@@ -92,10 +92,10 @@ slightly different datatype:
 
 {% highlight haskell %}
 data MyGADT a where
-  MyGADT :: Int -> T a
+  MyGADT :: Int -> MyGADT a
 {% endhighlight %}
 
-Where the return type `T a` does not constrain `a` to be equal to `Int`.
+Where the return type `MyGADT a` does not constrain `a` to be equal to `Int`.
 Therefore, we haven't encoded enough information into the `Rep` type in order
 for `from` and `to` to be able to roundtrip through it.
 
