@@ -379,7 +379,7 @@ class Monad' m where
 newtype T m a = MkT (m a)
   deriving Monad'
 
-instance Monad' m => Monad (T m) where
+instance Monad' m => Monad' (T m) where
   join                :: T m (T m a) -> T m a
   join = coerce (join ::   m   (m a) ->   m a)
 {% endhighlight %}
@@ -434,7 +434,7 @@ First, let's bring back our earlier attempt at deriving `Monad`-plus-`join`:
 {% highlight haskell %}
 instance ( Monad' m
          , ...
-         ) => Monad (T m) where
+         ) => Monad' (T m) where
   join                :: T m (T m a) -> T m a
   join = coerce (join ::   m   (m a) ->   m a)
 {% endhighlight %}
@@ -462,7 +462,7 @@ This is exactly the quantified constraint we need:
 {% highlight haskell %}
 instance ( Monad' m
          , forall a b. Coercible a b => Coercible (m a) (m b)
-         ) => Monad (T m) where
+         ) => Monad' (T m) where
   join                :: T m (T m a) -> T m a
   join = coerce (join ::   m   (m a) ->   m a)
 {% endhighlight %}
