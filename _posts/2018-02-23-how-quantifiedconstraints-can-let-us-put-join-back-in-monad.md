@@ -377,7 +377,6 @@ class Monad' m where
   join :: m (m a) -> m a
 
 newtype T m a = MkT (m a)
-  deriving Monad'
 
 instance Monad' m => Monad' (T m) where
   join                :: T m (T m a) -> T m a
