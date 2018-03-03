@@ -5,7 +5,7 @@ title: How QuantifiedConstraints can let us put join back in Monad
 
 _This is the second part in my series of practical applications of the
 `QuantifiedConstraints` extension. See
-[here](2018/02/11/how-to-derive-generic-for-some-gadts)
+[here](../../../../2018/02/11/how-to-derive-generic-for-some-gadts)
 for part 1._
 
 # `join`
@@ -44,13 +44,9 @@ how the proposed
 [`QuantifiedConstraints`](https://github.com/ghc-proposals/ghc-proposals/pull/109)
 extension can lift these restrictions.
 
-> Note that while there is a
-> [prototype implementation](http://git.haskell.org/ghc.git/shortlog/refs/heads/wip/T2893)
-> of `QuantifiedConstraints` available, much of the code in this blog post will not
-> work with it. That's because the code relies on an unimplemented (as of the
-> time of writing) featurette, described in
-> [this section](https://github.com/Gertjan423/ghc-proposals/blob/e16828dbcd59d0ca58573c81fc6cea671875e6e2/proposals/0000-quantified-constraints.rst#id8)
-> of the `QuantifiedConstraints` proposal.
+> If you want to follow along with the code in this post
+> at home, you can build a branch of GHC that implements `QuantifiedConstraints`
+> located [here](http://git.haskell.org/ghc.git/shortlog/refs/heads/wip/T2893).
 
 # The day the `join` died
 
@@ -488,3 +484,11 @@ constraints that GHC typically infers. Would users be surprised to see
 error messages involving quantified constraints? That remains to be seen,
 but we now at least have the _potential_ to fix the problem, which is a huge
 leap forward from the earlier status quo.
+
+-----
+
+Best of all, `Monad`-plus-`join` is far from the only type class that can
+wield `QuantifiedConstraints` to become derivable through
+`GeneralizedNewtypeDeriving`. In fact, `Traversable` could also be
+made to be newtype-derivable with a little sprucing up! The exact details
+of this sprucing will have to wait for the next post in this series, however.
