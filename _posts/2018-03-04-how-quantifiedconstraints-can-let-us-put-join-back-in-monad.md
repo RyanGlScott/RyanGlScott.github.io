@@ -402,8 +402,8 @@ parameter is representationally roled) or an abstract type like `Set`
 (whose parameter is nominally roled). Thus, to preserve type safety, we
 _must_ be conservative and assume that the parameter to `m` is nominal.
 
-But this is a serious problem. `m (m a)` is only ever nominally equal to
-`m (T m a)` when `m a` is nominally equal to `T m a`, and that can never
+But this is a serious problem. `m (m a)` is only ever representationally equal
+to `m (T m a)` when `m a` is nominally equal to `T m a`, and that can never
 happen! GHC therefore rejects this as ill roled.
 
 What can we do about all this? It might appear that we've designed ourself
