@@ -342,7 +342,7 @@ can be sure that the coercion does not change the type `a` whatsoever.
 ### Role with the changes
 
 Tying everything we've just learned together, we can now tweak
-`GeneralizedNewtypeDeriving` to be type-safe. Instead of generated the following
+`GeneralizedNewtypeDeriving` to be type-safe. Instead of generating the following
 code for a derived `BadIdea Age` instance:
 
 {% highlight haskell %}
@@ -386,7 +386,7 @@ following constraints hold:
 * `Coercible (m a) (T m a)`
 
 The latter fact follows from the fact that `T m a` is a newtype around `m a`.
-The former fact, however, is trickier. We can know unwrap the outer `T` to
+The former fact, however, is trickier. We can now unwrap the outer `T` to
 get an obligation of `Coercible (m (m a)) (m (T m a))`, but at this point, we
 are in trouble. Recall this part of GHC's error message:
 
