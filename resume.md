@@ -26,6 +26,9 @@ permalink: /resume/
 
 ### Talks
 
+#### 2018
+* Liquid Haskell: Refined, reflective, and classy. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2017. [ [pdf](../talk-slides/lh-refined-and-classy-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=ZqcBLjZLp-Y) ]
+
 #### 2017
 * Livin' la `via` loca: Coercing Types with Class. [Midwest PL Summit](http://wonks.github.io/mwpls/fall2017/2017/10/16/mwpls.html), Bloomington, IN. December 1, 2017. [ [pdf](../talk-slides/llvl-mpls-slides.pdf) ]
 * Monadic Composition for Deterministic, Parallel Batch Processing. [OOPSLA'17](https://2017.splashcon.org/track/splash-2017-OOPSLA), Vancouver, BC, Canada. October 26, 2017. [ [pdf](../talk-slides/mcdpbp-oopsla.pdf) ] [ [youtube](https://www.youtube.com/watch?v=A_W9SZG36rM) ]
