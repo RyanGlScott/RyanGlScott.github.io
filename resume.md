@@ -15,10 +15,11 @@ permalink: /resume/
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
+* B. Blöndal, A. Löh, and R. Scott. ["Deriving Via; or, How to Turn Hand-Written Instances into an Anti-Pattern"](https://www.kosmikus.org/DerivingVia/deriving-via-paper.pdf), Haskell Symposium 2018.
 * N. Vazou, A. Tondwalkar, R. Jhala, V. Choudhury, R. G. Scott, R. R. Newton, and P. Wadler. ["Refinement Reflection: Complete Verification with SMT"](https://nikivazou.github.io/static/popl18/refinement-reflection.pdf), POPL 2018.
 * R. G. Scott, O. S. Navarro Leija, J. Devietti, and R. R. Newton. ["Monadic Composition for Deterministic, Parallel Batch Processing"](https://2017.splashcon.org/event/splash-2017-oopsla-detflow-a-monad-for-deterministic-parallel-shell-scripting), OOPSLA 2017.
 * M. Vollmer, R. G. Scott, M. Musuvathi, and R. R. Newton. ["SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap"](http://www.cs.indiana.edu/~rrnewton/papers/ppopp17-sc-haskell.pdf), PPoPP 2017.
-* A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/papers/Gill-15-RemoteMonad), Haskell Symposium 2015.
+* A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/files/Gill-15-RemoteMonad.pdf), Haskell Symposium 2015.
 
 ### Professional activities
 * [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
