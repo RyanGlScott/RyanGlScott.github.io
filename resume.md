@@ -28,7 +28,8 @@ permalink: /resume/
 ### Talks
 
 #### 2018
-* `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern. [PLClub](http://www.cis.upenn.edu/~plclub/), Philadelphia, PA. June 8, 2018. [ [pdf](../talk-slides/deriving-via-plclub-slides.pdf) ]
+* `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern (Haskell'18 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 7, 2018. [ [pdf](../talk-slides/deriving-via-haskell18-wonks.pdf) ]
+  * `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern. [PLClub](http://www.cis.upenn.edu/~plclub/), Philadelphia, PA. June 8, 2018. [ [pdf](../talk-slides/deriving-via-plclub-slides.pdf) ]
 * Liquid Haskell: Refined, reflective, and classy. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2018. [ [pdf](../talk-slides/lh-refined-and-classy-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=ZqcBLjZLp-Y) ]
 
 #### 2017
