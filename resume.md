@@ -28,6 +28,7 @@ permalink: /resume/
 ### Talks
 
 #### 2018
+* Generalized Abstract `GHC.Generics`. [Haskell Implementors Workshop 2018](https://icfp18.sigplan.org/track/hiw-2018-papers), St. Louis, MO. September 23, 2018. [ [pdf](../talk-slides/gagg.pdf) ] [ [code](../talk-slides/GAGG.hs) ] [ youtube ]
 * `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern (Haskell'18 practice talk). [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 7, 2018. [ [pdf](../talk-slides/deriving-via-haskell18-wonks.pdf) ]
   * `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern. [PLClub](http://www.cis.upenn.edu/~plclub/), Philadelphia, PA. June 8, 2018. [ [pdf](../talk-slides/deriving-via-plclub-slides.pdf) ]
 * Liquid Haskell: Refined, reflective, and classy. [PL Wonks](http://wonks.github.io/), Bloomington, IN. September 1, 2018. [ [pdf](../talk-slides/lh-refined-and-classy-wonks-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=ZqcBLjZLp-Y) ]
