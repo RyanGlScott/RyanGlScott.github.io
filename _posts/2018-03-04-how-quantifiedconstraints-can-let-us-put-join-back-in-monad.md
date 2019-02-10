@@ -57,7 +57,7 @@ holes, closed type families, pattern synonyms, and an overhauled version of
 point later). Team GHC is hard at work preparing a patch which will implement
 the AMP for the upcoming 7.10 release.
 
-One day, and unexpected
+One day, an unexpected
 [hurdle](https://mail.haskell.org/pipermail/ghc-devs/2014-May/004964.html)
 arises. After making `join` a class method of `Monad`, GHC starts complaining
 when compiling the `haskeline` library. The issue can be boiled down to the
@@ -232,7 +232,7 @@ coerce :: Coercible a b => a -> b
 {% endhighlight %}
 
 `coerce` will be key in fixing `GeneralizedNewtypeDeriving`. If GHC cannot
-conclude `Coericble a b`, then we cannot be sure that it is safe to coerce
+conclude `Coercible a b`, then we cannot be sure that it is safe to coerce
 from a value of type `a` to type `b`, so it will be rejected with a type error.
 
 ### What can be `Coercible`
@@ -357,7 +357,7 @@ instance BadIdea Age where
   bad = coerce (bad :: Int -> Inspect Int)
 {% endhighlight %}
 
-That's it! Now, the typechecker will be unable conclude that
+That's it! Now, the typechecker will be unable to conclude that
 `Coercible (Inspect Int) (Inspect Age)` holds, and thus the typechecker will
 reject this code.
 
