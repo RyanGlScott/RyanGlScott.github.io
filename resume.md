@@ -27,6 +27,9 @@ permalink: /resume/
 
 ### Talks
 
+#### 2019
+* Visible Dependent Quantification (VDQ). [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 8, 2019. [ [pdf](../talk-slides/vdq-wonks.pdf) ]
+
 #### 2018
 * The Curious `case` of Pattern-Match Coverage Checking. [MuniHac 2018](https://munihac.github.io/), Unterföhring, Germany. November 16, 2018. [ [pdf](../talk-slides/munihac.pdf) ] [ [youtube](https://www.youtube.com/watch?v=nDmNTRG1V_0) ]
 * `DerivingVia`; or, How to Turn Hand-Written Instances into an Anti-Pattern. [Haskell'18](https://icfp18.sigplan.org/track/haskellsymp-2018-papers), St. Louis, MO. September 28, 2018. [ [pdf](../talk-slides/deriving-via-haskell18-conference.pdf) ] [ [youtube](https://www.youtube.com/watch?v=Zww6pKxxaOg) ]
