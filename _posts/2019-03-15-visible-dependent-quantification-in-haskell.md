@@ -6,7 +6,7 @@ title: Visible dependent quantification in Haskell
 > _This post is based off of a talk I gave on March 8, 2019, that was
 > unfortunately not recorded. In lieu of video, I decided to write this blog
 > post so that I could share it with others. The slides of the talk are
-> avaiable [here](../../../../talk-slides/vdq-wonks.pdf), although you do not need to
+> available [here](../../../../talk-slides/vdq-wonks.pdf), although you do not need to
 > read them in order to understand this post._
 
 I recently implemented a new sort of kind in GHC that you couldn't write before.
