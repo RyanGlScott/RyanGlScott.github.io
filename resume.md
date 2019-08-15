@@ -11,7 +11,7 @@ permalink: /resume/
   * Co-chair of KU Competitive Programming Group, 2013–2015.
 
 ### Work experience
-* [Galois](https://galois.com/), Portland, OR. Summer 2017. Worked on a symolic simulation engine written in Haskell.
+* [Galois](https://galois.com/), Portland, OR. Summer 2017. Worked on a symbolic simulation engine written in Haskell.
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
