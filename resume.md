@@ -29,6 +29,7 @@ permalink: /resume/
 ### Talks
 
 #### 2019
+* Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances. [Haskell'19](https://icfp19.sigplan.org/home/haskellsymp-2019), Berlin, Germany. August 22, 2019. [ [pdf](../talk-slides/verified-classes-haskell19.pdf) ] [ youtube ]
 * Visible Dependent Quantification (VDQ). [PL Wonks](http://wonks.github.io/), Bloomington, IN. March 8, 2019. [ [pdf](../talk-slides/vdq-wonks.pdf) ]
 
 #### 2018
