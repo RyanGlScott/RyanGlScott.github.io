@@ -266,7 +266,7 @@ and `TypeFamilies` implies `MonoLocalBinds`), and (2) `bar` is a locally defined
 function that falls under the purview of `MonoLocalBinds`. The net result is
 that kind generalization is switched off when inferring the type of `bar`,
 so GHC defaults the kind of `Any` to `Type`. In other words, the full inferred
-type of `bar` is `forall x. Proxy (Any :: Type)`.
+type of `bar` is `forall x. x -> Proxy (Any :: Type)`.
 
 ## GHC 8.8 just _had_ to be difficult
 
