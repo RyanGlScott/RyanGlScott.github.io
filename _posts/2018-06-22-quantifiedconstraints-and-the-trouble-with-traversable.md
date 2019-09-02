@@ -87,8 +87,8 @@ takes two arguments should be representationally roled in its first argument:
 
 {% highlight haskell %}
 type RepresentationalInFirstArg c =
-  (forall a1 a2 b1 b2. Coercible a1 b1
-                    => Coercible (c a1 a2) (c b1 b2) :: Constraint)
+  (forall a1 a2 b. Coercible a1 a2
+              => Coercible (c a1 b) (c a2 b) :: Constraint)
 {% endhighlight %}
 
 Equipped with this constraint, the derived `ArrowApply` instance for
