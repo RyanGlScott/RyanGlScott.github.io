@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 ### Education
-* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). Summer 2015–present. Pursuing Ph.D in Computer Science.
+* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). Summer 2015–present. M.S. in Computer Science with Logic minor. Pursuing Ph.D in Computer Science.
   * Teaching assistant, CSCI-P 523: Programming Language Implementation, compilers course at Indiana University, Fall 2016.
 * [University of Kansas (KU)](http://ku.edu/), Lawrence, Kansas. Advisor: [Andy Gill](http://ku-fpg.github.io/people/andygill/). Class of 2015. B.S. in Computer Science with Mathematics minor. GPA 3.9/4.0.
   * Co-chair of KU Competitive Programming Group, 2013–2015.
@@ -25,7 +25,7 @@ permalink: /resume/
 
 ### Professional activities
 * [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
-* [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–present.
+* [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–2019.
 
 ### Talks
 
