@@ -388,7 +388,7 @@ won't kind-check, since it would be like trying to fit a square peg into a round
 It is possible to create another version of `Equal` that does fit into a round hole, however:
 
 {% highlight haskell %}
-data Equal2' :: forall a. a -> forall b. b -> Type where
+data Equal' :: forall a. a -> forall b. b -> Type where
   Refl' :: Equal' t t
 {% endhighlight %}
 
