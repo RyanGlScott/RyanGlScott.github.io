@@ -15,7 +15,7 @@ permalink: /resume/
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
-* O. S. Navarro Leija, K. Shiptoski, R. G. Scott, B. Wang, N. Renner, R. R. Newton, and J. Devietti. "Reproducible Containers", ASPLOS 2020.
+* O. S. Navarro Leija, K. Shiptoski, R. G. Scott, B. Wang, N. Renner, R. R. Newton, and J. Devietti. ["Reproducible Containers"](https://gatowololo.github.io/resources/publications/dettrace.pdf), ASPLOS 2020.
 * R. G. Scott and R. R. Newton. ["Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances"](../papers/verified-classes.pdf), Haskell Symposium 2019. [ [appendix](../papers/verified-classes-appendix.pdf) ]
 * B. Blöndal, A. Löh, and R. Scott. ["Deriving Via; or, How to Turn Hand-Written Instances into an Anti-Pattern"](https://www.kosmikus.org/DerivingVia/deriving-via-paper.pdf), Haskell Symposium 2018.
 * N. Vazou, A. Tondwalkar, R. Jhala, V. Choudhury, R. G. Scott, R. R. Newton, and P. Wadler. ["Refinement Reflection: Complete Verification with SMT"](https://nikivazou.github.io/static/popl18/refinement-reflection.pdf), POPL 2018.
