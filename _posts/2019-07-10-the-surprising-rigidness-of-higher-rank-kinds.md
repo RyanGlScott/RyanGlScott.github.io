@@ -53,19 +53,6 @@ that is polymorphic in `a`. We wouldn't be allowed to use
 or `foo (const False)` are permissible, since the expressions `const True`
 and `const False` are sufficiently polymorphic.
 
-Just as `forall`s can appear within the argument type of a function, so too can
-they appear within the result type. This is perfectly admissible in GHC:
-
-{% highlight haskell %}
-bar :: a -> forall b. b -> (a, b)
-bar x y = (x, y)
-{% endhighlight %}
-
-Most people would not refer to the type of `bar` as higher-rank, however, since
-it can be shown that it is isomorphic to the ordinary type `a -> b -> (a, b)`.
-Still, it is worth pointing out that `forall`s can appear nested _after_ function
-arrows, not just before them.
-
 With the introduction of GHC 8.0, the type and kind parsers were combined. One
 consequence of this change is that it now becomes possible to use higher-rank
 polymorphism in kinds. Here is one example of a data type with a
@@ -102,7 +89,7 @@ the following example of higher-rank types at work:
 ex1 :: (forall a b. a -> b -> Bool) -> Bool
 ex1 f = f 1 'a'
 
-giveMeTrue :: a -> b -> Bool
+giveMeTrue :: forall a b. a -> b -> Bool
 giveMeTrue _ _ = True
 
 true :: Bool
@@ -111,16 +98,16 @@ true = ex1 giveMeTrue
 
 Nothing about these definitions is particularly exciting—it's just a rather
 indirect way of computing `True`. What is worth noting is that there is another
-way to write the type of `ex1`. Instead of quantifying both `a` and `b` upfront
-in the type `forall a b. a -> b -> Bool`, one can instead use a nested `forall`
-to quantify `b` later than `a`:
+way to write the type of `ex1`.
+The first argument to `ex1` uses `forall a b. <...>`, but we could just as well
+quantify the `b` before the `a`:
 
 {% highlight haskell %}
-ex2 :: (forall a. a -> forall b. b -> Bool) -> Bool
+ex2 :: (forall b a. a -> b -> Bool) -> Bool
 ex2 f = f 1 'a'
 {% endhighlight %}
 
-Aside from the different placement of the inner `forall`, the type of `ex2` is
+Aside from the order of type variables in the `forall`, the type of `ex2` is
 basically the same as the type of `ex1`. In fact, one can swap out the use of `ex1`
 for `ex2` in `true`:
 
@@ -160,19 +147,21 @@ Sure enough, that kind-checks. So far, so good.
 `ExEqual` is the rough analog of `true` in our previous experiment, since it
 demonstrates an application of something with a higher-rank kind to an argument.
 If we want to complete our current experiment, however, there is one more step
-we must perform. We need to conjure up a type with a higher-rank kind that uses
-a nested `forall`, just like we did with `ex2` before. Just as `ex2` was a slight
+we must perform.
+We need to conjure up an analog for `ex2`, which quantifies the type variables
+`a` and `b` the other way around.
+Just as `ex2` was a slight
 modification of `ex1`, so too can we slightly tweak `Ex1` to produce our desired
 type:
 
 {% highlight haskell %}
-data Ex2 :: (forall a. a -> forall b. b -> Type) -> Type where
-  MkEx2 :: forall (f :: forall a. a -> forall b. b -> Type).
+data Ex2 :: (forall b a. a -> b -> Type) -> Type where
+  MkEx2 :: forall (f :: forall b a. a -> b -> Type).
            f Int Maybe -> Ex2 f
 {% endhighlight %}
 
 Again the only difference between `Ex1` and `Ex2` is that the latter uses
-`forall a. a -> forall b. b -> Type`, in contrast to the former's
+`forall b a. a -> b -> Type`, in contrast to the former's
 `forall a b. a -> b -> Type`. Now, we can wrap up by swapping out
 `Ex2` for `Ex1` in `ExEqual`...
 
@@ -184,8 +173,8 @@ type ExEqual = Ex2 Equal
 complains that `ExEqual` no longer kind-checks:
 
 {% highlight plaintext %}
-    • Expected kind ‘forall a. a -> forall b. b -> Type’,
-        but ‘Equal’ has kind ‘forall b. a0 -> b -> Type’
+    • Expected kind ‘forall b a. a -> b -> Type’,
+        but ‘Equal’ has kind ‘forall a b. a -> b -> Type’
     • In the first argument of ‘Ex2’, namely ‘Equal’
       In the type ‘Ex2 Equal’
       In the type declaration for ‘ExEqual’
@@ -205,7 +194,7 @@ an example or two of this work being done.
 ## `forall`s in Core
 
 Earlier, I waved my hands and claimed that `forall a b. a -> b -> Bool` and
-`forall a. a -> forall b. b -> Bool` were basically the same type. When
+`forall b a. a -> b -> Bool` were basically the same type. When
 talking about source Haskell, this is a reasonable approximation. When
 GHC compiles Haskell code, however, it turns it into a typed intermediate
 language called Core. At the level of Core, these two types are very much
@@ -292,7 +281,7 @@ Now let's go back and take a closer look at `ex2`, which uses a slightly
 different order of `forall`s:
 
 {% highlight haskell %}
-ex2 :: (forall a. a -> forall b. b -> Bool) -> Bool
+ex2 :: (forall b a. a -> b -> Bool) -> Bool
 {% endhighlight %}
 
 As I mentioned earlier, this type is _not_ the same as `ex1`'s type in Core.
@@ -301,38 +290,28 @@ Haskell. To see how GHC pulls this off, let's examine what `ex2 giveMeTrue`
 looks like in Core with `-ddump-simpl`:
 
 {% highlight haskell %}
--- RHS size: {terms: 6, types: 7, coercions: 0, joins: 0/0}
+-- RHS size: {terms: 4, types: 6, coercions: 0, joins: 0/0}
 true :: Bool
-true = ex2 (\ (@ a) (dk :: a) (@ b) -> giveMeTrue @ a @ b dk)
+true = ex2 (\ (@ b) (@ a) -> giveMeTrue @ a @ b)
 {% endhighlight %}
 
 Interestingly, GHC does not produce `true = ex2 giveMeTrue` in Core this time
 around. Instead, it uses a lambda abstraction to rearrange the type
-and term variable arguments from the order that `ex2` expects:
+variable arguments from the order that `ex2` expects:
 
 {% highlight plaintext %}
-forall a. a ->  forall b. b ->  Bool
-------------------------------------
-type      term  type      term
-------------------------------------
-@ a       dk    @ b
+forall b     a. <...>
+---------------------
+  \ (@ b) (@ a) ->
 {% endhighlight %}
 
 To the order that `giveMeTrue` expects:
 
 {% highlight plaintext %}
-forall a. forall b. a ->  b ->  Bool
-------------------------------------
-type      type      term  term
-------------------------------------
-@ a       @ b       dk
+      forall a   b. <...>
+-------------------------
+giveMeTrue @ a @ b
 {% endhighlight %}
-
-Note that there is
-no need to explicitly refer to the second term variable, since it appears in
-the same position in both places (and is therefore eta-contracted away). The
-`@ a` argument also appears in the same position in both places, but since we
-have to rearrange arguments that come after it, we end up needing to refer to it by name.
 
 This process of swizzling variables around is accomplished in a part of
 type inference called _regeneralization_. GHC does quite a bit of regeneralization
@@ -355,11 +334,11 @@ behind-the-scenes rearranging, since the order of `forall`s in the kinds of `Ex2
 lambda syntax, which I'll invent some notation for:
 
 {% highlight haskell %}
-type ExEqual = Ex2 (/\ (@ a) (dk :: a) (@ b) -> Equal @ a @ b dk)
+type ExEqual = Ex2 (/\ (@ b) (@ a) -> Equal @ a @ b)
 {% endhighlight %}
 
 If you're wondering why I'm using words like "hypothetical" and "invent", that's
-because there is no such thing as `/\ (@ a) -> ...`, neither in the source language nor in Core.
+because there is no such thing as `/\ (@ b) -> ...`, neither in the source language nor in Core.
 Nor could GHC easily support it, since
 adding a type-level lambda could potentially threaten the soundness of type
 inference [[^5]]. The full details are beyond the scope of this post—see my other post
@@ -388,7 +367,7 @@ won't kind-check, since it would be like trying to fit a square peg into a round
 It is possible to create another version of `Equal` that does fit into a round hole, however:
 
 {% highlight haskell %}
-data Equal' :: forall a. a -> forall b. b -> Type where
+data Equal' :: forall b a. a -> b -> Type where
   Refl' :: Equal' t t
 {% endhighlight %}
 
@@ -403,7 +382,7 @@ general-purpose newtype that rearranges the order of `forall`s, like so:
 
 {% highlight haskell %}
 newtype Push :: (forall a b. a -> b -> Type)
-             -> forall a. a -> forall b. b -> Type where
+             ->  forall b a. a -> b -> Type where
   MkPush :: forall (f :: forall a b. a -> b -> Type)
                    a b (x :: a) (y :: b).
             f x y -> Push f x y
@@ -411,7 +390,7 @@ newtype Push :: (forall a b. a -> b -> Type)
 
 `Push` can be thought of as something which takes as input a type of kind
 `forall a b. a -> b -> Type`, and produces as output a type of kind
-`forall a. a -> forall b. b -> Type`. This is made possible by the fact that newtypes
+`forall b a. a -> b -> Type`. This is made possible by the fact that newtypes
 can order kind variables however they please, just like data types can. This
 trick might be more plain to see if we define `MkPush` using GHC's
 [visible kind application](https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0015-type-level-type-applications.rst)
@@ -419,10 +398,10 @@ syntax, which is available in GHC 8.8 or later:
 
 {% highlight haskell %}
 newtype Push :: (forall a b. a -> b -> Type)
-             -> forall a. a -> forall b. b -> Type where
+             ->  forall b a. a -> b -> Type where
   MkPush :: forall (f :: forall a b. a -> b -> Type)
                    a b (x :: a) (y :: b).
-            f @a @b x y -> Push f @a x @b y
+            f @a @b x y -> Push f @b @a x y
 {% endhighlight %}
 
 With `Push`, we can give `ExEqual` a shove in the right direction:
@@ -438,7 +417,7 @@ of kind `forall a b. a -> b -> Type`. The downside is that you'll have to deal w
 [machinery](https://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Coerce.html)
 to deal with unwrapping newtypes these days.
 
-I've actually used this very `Push` newtype (as well as other similar newtypes) in the
+I've actually used a variant of this `Push` newtype (as well as other similar newtypes) in the
 [`Data.Eq.Type.Hetero`](https://hackage.haskell.org/package/eq-4.2/docs/Data-Eq-Type-Hetero.html)
 module that I contributed to Edward Kmett's
 [`eq`](https://hackage.haskell.org/package/eq) package. The process of writing the code
