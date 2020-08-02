@@ -11,10 +11,12 @@ permalink: /resume/
   * Co-chair of KU Competitive Programming Group, 2013–2015.
 
 ### Work experience
-* [Galois](https://galois.com/), Portland, OR. Summer 2017. Worked on a symbolic simulation engine written in Haskell.
+* [Galois, Inc.](https://galois.com/), Arlington, VA. August 2020–present. Software engineer and researcher.
+  * Intern, Portland, OR. Summer 2017. Worked on a symbolic simulation engine written in Haskell.
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
+* S. Graf, S. Peyton Jones, and R. G. Scott. ["Lower Your Guards: A Compositional Pattern-Match Coverage Checker"](https://www.microsoft.com/en-us/research/uploads/prod/2020/03/lower-your-guards-icfp20.pdf), ICFP 2020.
 * O. S. Navarro Leija, K. Shiptoski, R. G. Scott, B. Wang, N. Renner, R. R. Newton, and J. Devietti. ["Reproducible Containers"](https://gatowololo.github.io/resources/publications/dettrace.pdf), ASPLOS 2020.
 * R. G. Scott and R. R. Newton. ["Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances"](../papers/verified-classes.pdf), Haskell Symposium 2019. [ [appendix](../papers/verified-classes-appendix.pdf) ]
 * B. Blöndal, A. Löh, and R. Scott. ["Deriving Via; or, How to Turn Hand-Written Instances into an Anti-Pattern"](https://www.kosmikus.org/DerivingVia/deriving-via-paper.pdf), Haskell Symposium 2018.
@@ -24,6 +26,7 @@ permalink: /resume/
 * A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/files/Gill-15-RemoteMonad.pdf), Haskell Symposium 2015.
 
 ### Professional activities
+* [Haskell Implementors Workshop 2020](https://icfp20.sigplan.org/home/hiw-2020), program commitee member. July–August 2020.
 * [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
 * [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–2019.
 
