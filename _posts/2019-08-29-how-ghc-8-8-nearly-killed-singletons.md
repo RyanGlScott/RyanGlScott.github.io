@@ -223,7 +223,7 @@ type family Any :: k
 
 `Proxy` is a simple data type that is isomorphic to `()`, but with an additional
 phantom type parameter with a polymorphic kind. `Proxy` does have some
-[legitimate uses cases](../../../../2019-02-06-proxy-arguments-in-class-methods),
+[legitimate uses cases](../../../../2019/02/06/proxy-arguments-in-class-methods),
 but it is also valuable for being one of the
 simplest poly-kinded data types, which makes it extremely convenient for
 explaining the inner workings of `PolyKinds`. `Any` is a minimalist type family
