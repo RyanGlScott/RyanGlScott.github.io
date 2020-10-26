@@ -19,7 +19,7 @@ permalink: /resume/
 * S. Graf, S. Peyton Jones, and R. G. Scott. ["Lower Your Guards: A Compositional Pattern-Match Coverage Checker"](https://www.microsoft.com/en-us/research/uploads/prod/2020/03/lower-your-guards-icfp20.pdf), ICFP 2020.
 * O. S. Navarro Leija, K. Shiptoski, R. G. Scott, B. Wang, N. Renner, R. R. Newton, and J. Devietti. ["Reproducible Containers"](https://gatowololo.github.io/resources/publications/dettrace.pdf), ASPLOS 2020.
 * R. G. Scott and R. R. Newton. ["Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances"](../papers/verified-classes.pdf), Haskell Symposium 2019. [ [appendix](../papers/verified-classes-appendix.pdf) ]
-* B. Blöndal, A. Löh, and R. Scott. ["Deriving Via; or, How to Turn Hand-Written Instances into an Anti-Pattern"](https://www.kosmikus.org/DerivingVia/deriving-via-paper.pdf), Haskell Symposium 2018.
+* B. Blöndal, A. Löh, and R. Scott. ["Deriving Via; or, How to Turn Hand-Written Instances into an Anti-Pattern"](../papers/deriving-via.pdf), Haskell Symposium 2018.
 * N. Vazou, A. Tondwalkar, R. Jhala, V. Choudhury, R. G. Scott, R. R. Newton, and P. Wadler. ["Refinement Reflection: Complete Verification with SMT"](https://nikivazou.github.io/static/popl18/refinement-reflection.pdf), POPL 2018.
 * R. G. Scott, O. S. Navarro Leija, J. Devietti, and R. R. Newton. ["Monadic Composition for Deterministic, Parallel Batch Processing"](https://2017.splashcon.org/event/splash-2017-oopsla-detflow-a-monad-for-deterministic-parallel-shell-scripting), OOPSLA 2017.
 * M. Vollmer, R. G. Scott, M. Musuvathi, and R. R. Newton. ["SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap"](http://www.cs.indiana.edu/~rrnewton/papers/ppopp17-sc-haskell.pdf), PPoPP 2017.
