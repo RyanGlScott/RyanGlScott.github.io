@@ -47,7 +47,7 @@ Somewhat surprisingly, GHC does not accept this program:
 {% highlight plaintext %}
 error: Not in scope: type variable ‘a’
   |
-8 | type F x = Just (x :: a)
+  | type F x = Just (x :: a)
   |                       ^
 {% endhighlight %}
 
