@@ -329,6 +329,14 @@ its semantics, then something has gone terribly wrong.
 As we have just witnessed, `ScopedTypeVariables` doesn't work in the situation
 when a type-level declaration binds more kind variables in its kind signature
 than its arity permits. This is a rather unsatisfying outcome, however.
+
+For one thing, arity-0 definitions are arguably less common than higher-arity
+definitions. One could imagine always bringing kind-level `forall`s into
+scope with `ScopedTypeVariables` and reporting a special error message when the
+arity is insufficiently small, like in the `G` example above. This has been
+proposed in [this GHC issue](https://gitlab.haskell.org/ghc/ghc/-/issues/16635),
+but there is currently a lack of consensus on whether this is the right approach.
+
 To make things worse, `ScopedTypeVariables`' non-interaction with kind-level
 `forall`s can sometimes lead to confusing behavior. Consider this program:
 
