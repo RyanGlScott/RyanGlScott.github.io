@@ -1,4 +1,4 @@
-all: serve
+all: docker-serve
 
 BUNDLE_ARGS=exec jekyll serve --no-watch --config _config.yml,_config-dev.yml
 IMAGE_NAME=ryanglscott/website
