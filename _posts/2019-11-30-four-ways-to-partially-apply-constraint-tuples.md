@@ -465,7 +465,7 @@ four techniques documented here.
 [^1]: See [here](https://stackoverflow.com/a/51812559) for a lengthier
       explanation of why catch-all instances are usually discouraged.
 
-[^2]: See [this blog post]((../../../../2019/05/26/on-the-arity-of-type-families))
+[^2]: See [this blog post](../../../../2019/05/26/on-the-arity-of-type-families)
       for an extended discussion about why type synonyms (and type families)
       cannot be partially applied.
 
