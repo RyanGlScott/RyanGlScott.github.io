@@ -162,6 +162,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: ($line-height-computed / 2);
+  font-size: $font-size-p;
   ul,
   ol {
     margin-bottom: 0;
