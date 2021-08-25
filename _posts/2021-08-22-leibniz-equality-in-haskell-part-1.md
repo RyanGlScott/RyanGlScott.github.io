@@ -151,7 +151,7 @@ type `c b`, and then turn that into type `b`, then we'll be done.
 Here's the tricky part: what do we use for `c`? The situation now is different from when
 we were implementing `refl`. There, we had to _produce_ a value of type
 `forall c. c a -> c a`, which meant that we couldn't know in advance what `c`
-was. With `castWith`, however, we instead of an _argument_ of type
+was. With `castWith`, however, we instead have an _argument_ of type
 `forall c. c a -> c b`, which means that we can apply the argument to whatever
 we want. In other words, we can instantiate `c` to a more specialized type that
 is better tailored to our particular use case.
