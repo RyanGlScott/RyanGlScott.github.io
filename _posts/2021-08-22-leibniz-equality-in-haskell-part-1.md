@@ -143,8 +143,8 @@ castWith (Refl aEqualsB) x = _
 {% endhighlight %}
 
 Here, `aEqualsB :: forall c. c a -> c b` and `x :: a`, while our ultimate goal is to
-fill in the hole `_` with something of type `b`. Squinting at the type of `f` reveals one
-possible path forward, as `f` converts something of type `c a` to type `c b`
+fill in the hole `_` with something of type `b`. Squinting at the type of `aEqualsB` reveals one
+possible path forward, as `aEqualsB` converts something of type `c a` to type `c b`
 (for any context `c`). If we can turn `x :: a` into something of `c a`, convert it to
 type `c b`, and then turn that into type `b`, then we'll be done.
 
