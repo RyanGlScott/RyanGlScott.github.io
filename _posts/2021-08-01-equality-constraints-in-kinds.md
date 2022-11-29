@@ -3,6 +3,12 @@ layout: post
 title: GHC curiosities&#58; Equality constraints in kinds
 ---
 
+> _WARNING: This blog post describes an old GHC feature that no longer exists in
+> recent versions of the compiler. See
+> [GHC Proposal #547](https://github.com/ghc-proposals/ghc-proposals/pull/547),
+> which lists the reasons for this feature's removal. This post is now only of
+> interest for historical reasons._
+
 In GHC, many language features available at the term level can be
 straightforwardly promoted to the type level. For example, the
 following term-level function:
