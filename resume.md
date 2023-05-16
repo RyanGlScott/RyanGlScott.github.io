@@ -66,6 +66,11 @@ permalink: /resume/
 #### 2015
 * An existential-aware `DeriveFoldable`. [Haskell Implementors Workshop 2015 lightning talks](https://wiki.haskell.org/HaskellImplementorsWorkshop/2015), Vancouver, BC, Canada. August 30, 2015. [ [pdf](../talk-slides/derive-foldable-hiw-slides.pdf) ] [ [youtube](https://www.youtube.com/watch?v=lTpVN8KQOOg) ]
 
+### Blog posts
+
+* [Posts that I've authored](https://galois.com/blog/author/ryanscott/) on the Galois blog
+* [Posts that I've authored](/) on my personal blog
+
 ### Portfolio
 * [Glasgow Haskell Compiler (GHC)](http://git.haskell.org/ghc.git) (contributor). The flagship compiler for the Haskell programming language. Contributed to GHC's support for metaprogramming, including `deriving` and Template Haskell.
 * [`blank-canvas`](https://github.com/ku-fpg/blank-canvas) (co-maintainer). A Haskell binding to the HTML5 `<canvas>` API, which allows for graphical web applications to be written in Haskell.
