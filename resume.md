@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 ### Education
-* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). Summer 2015–present. M.S. in Computer Science with Logic minor. Pursuing Ph.D in Computer Science.
+* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). 2015–2020. M.S. in Computer Science with Logic minor. 
   * Teaching assistant, CSCI-P 523: Programming Language Implementation, compilers course at Indiana University, Fall 2016.
 * [University of Kansas (KU)](http://ku.edu/), Lawrence, Kansas. Advisor: [Andy Gill](http://ku-fpg.github.io/people/andygill/). Class of 2015. B.S. in Computer Science with Mathematics minor. GPA 3.9/4.0.
   * Co-chair of KU Competitive Programming Group, 2013–2015.
@@ -16,6 +16,7 @@ permalink: /resume/
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
+* L. Silver, E. Westbrook, M. Yacavone, and R. G. Scott. ["Interaction Tree Specifications: A Framework for Specifying Recursive, Effectful Computations that Supports Auto-active Verification"](https://www.seas.upenn.edu/~lucsil/assets/pdf/itreespec.pdf), ECOOP 2023.
 * S. Graf, S. Peyton Jones, and R. G. Scott. ["Lower Your Guards: A Compositional Pattern-Match Coverage Checker"](https://www.microsoft.com/en-us/research/uploads/prod/2020/03/lower-your-guards-icfp20.pdf), ICFP 2020.
 * O. S. Navarro Leija, K. Shiptoski, R. G. Scott, B. Wang, N. Renner, R. R. Newton, and J. Devietti. ["Reproducible Containers"](https://gatowololo.github.io/resources/publications/dettrace.pdf), ASPLOS 2020.
 * R. G. Scott and R. R. Newton. ["Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances"](../papers/verified-classes.pdf), Haskell Symposium 2019. [ [appendix](../papers/verified-classes-appendix.pdf) ]
@@ -26,11 +27,15 @@ permalink: /resume/
 * A. Gill, J. Dawson, A. Eskilson, A. Farmer, M. Grebe, R. Scott, J. Stanton, J. Rosenbluth, and N. Sculthorpe, ["The remote-monad design pattern"](http://ku-fpg.github.io/files/Gill-15-RemoteMonad.pdf), Haskell Symposium 2015.
 
 ### Professional activities
+* [Haskell Implementors Workshop 2023](https://icfp23.sigplan.org/home/hiw-2023), program chair. January–September 2023.
 * [Haskell Implementors Workshop 2020](https://icfp20.sigplan.org/home/hiw-2020), program commitee member. July–August 2020.
 * [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
 * [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–2019.
 
 ### Talks
+
+#### 2023
+* Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ pdf to come later ]
 
 #### 2019
 * Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances. [Haskell'19](https://icfp19.sigplan.org/home/haskellsymp-2019), Berlin, Germany. August 22, 2019. [ [pdf](../talk-slides/verified-classes-haskell19.pdf) ] [ youtube ]
