@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 ### Education
-* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). 2015–2020. M.S. in Computer Science with Logic minor. 
+* [Indiana University (IU)](https://www.indiana.edu/), Bloomington, Indiana. Advisor: [Ryan Newton](http://www.cs.indiana.edu/~rrnewton/homepage.html). 2015–2020. M.S. in Computer Science with Logic minor.
   * Teaching assistant, CSCI-P 523: Programming Language Implementation, compilers course at Indiana University, Fall 2016.
 * [University of Kansas (KU)](http://ku.edu/), Lawrence, Kansas. Advisor: [Andy Gill](http://ku-fpg.github.io/people/andygill/). Class of 2015. B.S. in Computer Science with Mathematics minor. GPA 3.9/4.0.
   * Co-chair of KU Competitive Programming Group, 2013–2015.
@@ -35,7 +35,7 @@ permalink: /resume/
 ### Talks
 
 #### 2023
-* Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ pdf to come later ]
+* Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ [pdf](../talk-slides/ghc-contributors-workshop-2023.pdf) ] [ youtube ]
 
 #### 2019
 * Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances. [Haskell'19](https://icfp19.sigplan.org/home/haskellsymp-2019), Berlin, Germany. August 22, 2019. [ [pdf](../talk-slides/verified-classes-haskell19.pdf) ] [ youtube ]
