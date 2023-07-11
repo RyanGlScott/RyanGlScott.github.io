@@ -35,7 +35,7 @@ permalink: /resume/
 ### Talks
 
 #### 2023
-* Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ [pdf](../talk-slides/ghc-contributors-workshop-2023.pdf) ] [ [youtube](https://youtube.com/video/1mBkExAOS6c) ]
+* Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ [pdf](../talk-slides/ghc-contributors-workshop-2023.pdf) ] [ [youtube](https://www.youtube.com/watch?v=Efg2GW3EDlY) ]
 
 #### 2019
 * Generic and Flexible Defaults for Verified, Law-Abiding Type-Class Instances. [Haskell'19](https://icfp19.sigplan.org/home/haskellsymp-2019), Berlin, Germany. August 22, 2019. [ [pdf](../talk-slides/verified-classes-haskell19.pdf) ] [ youtube ]
