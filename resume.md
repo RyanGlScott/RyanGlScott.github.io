@@ -30,7 +30,7 @@ permalink: /resume/
 ### Professional activities
 * [FUNARCH 2024](https://icfp24.sigplan.org/home/funarch-2024), program committee member. March–September 2024.
 * [Haskell Implementors Workshop 2023](https://icfp23.sigplan.org/home/hiw-2023), program chair. January–September 2023.
-* [Haskell Implementors Workshop 2020](https://icfp20.sigplan.org/home/hiw-2020), program commitee member. July–August 2020.
+* [Haskell Implementors Workshop 2020](https://icfp20.sigplan.org/home/hiw-2020), program committee member. July–August 2020.
 * [ICFP'17 Artifact Evaluation Committee](https://icfp17.sigplan.org/committee/icfp-2017-artifacts-artifact-evaluation-committee), member. May–June 2017.
 * [Haskell Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee), member. 2016–2019.
 
