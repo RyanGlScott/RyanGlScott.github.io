@@ -36,6 +36,9 @@ permalink: /resume/
 
 ### Talks
 
+#### 2024
+* Copilot: Assured Runtime Veriﬁcation for Embedded Systems and Hardware. [SSH-SoC'24](https://ssh-soc-workshop.github.io/2024/), San Francisco, CA. June 23, 2024. [ [pdf](../talk-slides/copilot-bluespec-ssh-soc-2024.pdf) ]
+
 #### 2023
 * Trustworthy Runtime Verification via Bisimulation (Experience Report). [ICFP'23](https://icfp23.sigplan.org/), Seattle, WA. September 7, 2023. [ [pdf](../talk-slides/copilot-verifier-icfp-2023.pdf) ] [ [youtube](https://www.youtube.com/watch?v=1V2_m6m3rh0) ]
 * Getting up, running, and contributing to GHC. [2023 GHC Contributors' Workshop](https://haskell.foundation/events/2023-ghc-development-workshop.html), Zürich, Switzerland. June 7, 2023. [ [pdf](../talk-slides/ghc-contributors-workshop-2023.pdf) ] [ [youtube](https://www.youtube.com/watch?v=Efg2GW3EDlY) ]
