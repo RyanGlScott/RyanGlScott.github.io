@@ -16,6 +16,7 @@ permalink: /resume/
 * [Intel Labs](http://www.intel.com/content/www/us/en/research/intel-research.html), Hillsboro, OR. Winter 2015. Worked on preparing the [Intel Haskell Research Compiler (HRC)](http://www.leafpetersen.com/leaf/publications/hs2013/hrc-paper.pdf) for an open source release.
 
 ### Publications
+* R. G. Scott, B. Boston, B. Davis, I. Diatchki, M. Dodds, J. Hendrix, D. Matichuk, K. Quick, T. Ravitch, V. Robert, B. Selfridge, A. Ștefănescu, D. Wagner, and S. Winwood. [Macaw: A Machine Code Toolbox for the Busy Binary Analyst](https://arxiv.org/pdf/2407.06375), arXiv (2024).
 * R. G. Scott, M. Dodds, I. Perez, A. E. Goodloe, and R. Dockins. ["Trustworthy Runtime Verification via Bisimulation (Experience Report)"](../papers/copilot-verifier-icfp23.pdf), ICFP 2023.
 * L. Silver, E. Westbrook, M. Yacavone, and R. G. Scott. ["Interaction Tree Specifications: A Framework for Specifying Recursive, Effectful Computations that Supports Auto-active Verification"](https://www.seas.upenn.edu/~lucsil/assets/pdf/itreespec.pdf), ECOOP 2023.
 * S. Graf, S. Peyton Jones, and R. G. Scott. ["Lower Your Guards: A Compositional Pattern-Match Coverage Checker"](https://www.microsoft.com/en-us/research/uploads/prod/2020/03/lower-your-guards-icfp20.pdf), ICFP 2020.
