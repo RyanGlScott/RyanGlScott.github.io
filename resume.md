@@ -38,6 +38,9 @@ permalink: /resume/
 
 ### Talks
 
+#### 2026
+* Developing Tools for Formal Specification and Verification. [2026 Haskell Foundation North American Hackathon (AmeriHac)](https://haskell.foundation/events/2026-amerihac.html), New York, NY. February 7, 2026. [ [pdf](https://haskell.founcation/assets/other/ryan-scott-keynote.pdf) ]
+
 #### 2024
 * Copilot: Assured Runtime Veriﬁcation for Embedded Systems and Hardware. [SSH-SoC'24](https://ssh-soc-workshop.github.io/2024/), San Francisco, CA. June 23, 2024. [ [pdf](../talk-slides/copilot-bluespec-ssh-soc-2024.pdf) ]
 
